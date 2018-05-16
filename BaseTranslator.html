@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang = "en-US">
+
+<!--area between comments same for all pgs!-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Base Translator</title>
+	<link rel="stylesheet" type="text/css" href="BTCss.css">
+	<script src="BTrans.js"></script>
+</head>
+
+<body>
+
+	<h1>Base Translator</h1>
+	<!--change to input type="url"-->
+	<form name="translatorForm" id="translatorFormId" action="#">
+		Enter Number To Convert:
+		<input type="text" name="numberInput" id="numberInputId" autocomplete="off">
+		<br>
+		In Base:
+		<select name="fromBase" id="fromBasePicker">
+			<option value="2">Base 2 (Binary)</option>
+			<option value="8">Base 8 (Octal)</option>
+			<option value="10">Base 10 (Decimal)</option>
+			<option value="16">Base 16 (Hexadecimal)</option>
+		</select>
+		<br>
+		Convert To Base:
+		<select name="toBase" id="toBasePicker">
+			<option value="2">Base 2 (Binary)</option>
+			<option value="8">Base 8 (Octal)</option>
+			<option value="10">Base 10 (Decimal)</option>
+			<option value="16">Base 16 (Hexadecimal)</option>
+		</select>
+		<br>
+		<input type="button" name="Convert" value="Convert" onClick="runConverter()">
+	</form>
+
+	<!--<button onClick="printURL()">Submit</button>-->
+
+
+	<p id="output"></p>
+</body>
+
+
+
+
+</html>
